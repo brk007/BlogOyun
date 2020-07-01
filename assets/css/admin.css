@@ -1,0 +1,54 @@
+header {
+    background: #819703;
+    height: 66px;
+    }
+
+    .admin-wrapper {      
+
+        height:calc(100%-66px);
+    }
+
+    
+    .admin-wrapper .admin-content {
+ 
+        height: 100%;
+        padding: 40px 100px 100px;
+        overflow-y: scroll;
+       }
+       .admin-content .page-title {
+           text-align: center;
+           margin-bottom: 1.5rem;
+       }
+       .admin-content .button-group{
+           text-align: center;
+       }
+
+       table {
+           width: 100%;
+           border-collapse: collapse;
+           font-size: 1.1rem;
+       }
+       th,td{
+           padding:15px;
+           text-align: left;
+           border-bottom: 1px solid #d3d3d3;
+       }
+
+       .edit{
+           color: green;
+       }
+       .delete{
+           color: red;
+       }
+       .publish{
+           color:orange;
+       }
+       .edit:hover,
+       .delete:hover,
+       .publish:hover{
+           text-decoration: underline;
+       }
+
+       form div {
+           margin-bottom: 15px;
+       }
