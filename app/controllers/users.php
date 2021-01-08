@@ -18,8 +18,6 @@ function loginUser($user){
     $_SESSION['id'] = $user['id'];
     $_SESSION['username'] = $user['username'];
     $_SESSION['admin'] = $user['admin'];
-    $_SESSION['message'] = 'Giriş yaptınız';
-    $_SESSION['type'] = 'success';
 
     header('location: ' . BASE_URL . '/index.php');
     exit();

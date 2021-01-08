@@ -56,8 +56,8 @@
          <td><?php echo $key +1;?></td>
          <td><?php echo $post['title']?></td>
          <td><?php echo $post['user_id']?></td>
-         <td><a href="edit.php?id=<?php echo $post['id'];?>" class="edit">edit</a></td>
-         <td><a href="edit.php?delete_id=<?php echo $post['id'] ?>" class="delete">delete</a></td>
+         <td><a href="edit.php?id=<?php echo $post['id'];?>" class="edit">Düzenle</a></td>
+         <td><a href="edit.php?delete_id=<?php echo $post['id'] ?>" class="delete">Sil</a></td>
          <?php if ($post["published"]): ?>
          <td><a href="edit.php?published=0&p_id=<?php echo $post['id']?>" class="unpublish">Yayından Kaldır</a></td>
          <?php else: ?>

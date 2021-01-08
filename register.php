@@ -26,12 +26,12 @@
 
 <div class="auth-content">
 <form action="register.php" method="post">
-  <h2 class="form-title">Register</h2>
+  <h2 class="form-title">Kayıt Ol</h2>
   <?php include (ROOT_PATH . "/app/helpers/formErrors.php");?>
 
 
 <div>
-  <label>Username</label>
+  <label>Kullanıcı Adı</label>
   <input type="text" name="username" value="<?php echo $username;?>" class="text-input">
   </div>
   <div>
@@ -39,17 +39,17 @@
     <input type="text" name="email" value="<?php echo $email;?>" class="text-input">
     </div>
     <div>
-    <label>Password</label>
+    <label>Parola</label>
     <input type="password" name="password" value="<?php echo $password;?>" class="text-input">
     </div>
     <div>
-    <label>Password Confirmation</label>
+    <label>Parola Tekrarı</label>
     <input type="password" name="passwordConf" value="<?php echo $passwordConf;?>" class="text-input">
     </div>
     <div>
-     <button type="submit" name="register-btn" class="btn btn-big">Register</button>
+     <button type="submit" name="register-btn" class="btn btn-big">Kayıt Ol</button>
     </div>
-    <p>Or <a href="<?php echo BASE_URL . '/login.php'?>">Sign In</a></p>
+    <p>Ya Da <a href="<?php echo BASE_URL . '/login.php'?>">Giriş Yap</a></p>
 
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

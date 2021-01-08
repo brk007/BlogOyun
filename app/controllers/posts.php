@@ -41,7 +41,7 @@ if(isset($_GET['published']) && isset($_GET['p_id'])) {
     $published = $_GET['published'];
     $p_id = $_GET['p_id'];
     $count = update($table,$p_id, ['published '=> $published]);
-    $_SESSION['message'] = "Paylaşım paylaşıldı";
+    $_SESSION['message'] = "Paylaşım başarılı";
     $_SESSION['type']="success";
     header("location:" . BASE_URL . "/admin/posts/index.php");
     exit(); 
@@ -61,11 +61,11 @@ if(isset($_POST['add-post'])){
          $_POST['image']= $image_name;
        }
        else{
-           array_push($errors, "Fotoğraf yüklemesi başarısız");
+           array_push($errors, "Failed to upload image");
        }
     }
     else{
-     array_push($errprs, "Fotoğraf gerekiyor");
+     array_push($errprs, "Görsel gerekiyor");
     }
 
     if(count($errors)==0){
@@ -110,23 +110,21 @@ if(isset($_POST['update-post'])){
           $_POST['image']= $image_name;
         }
         else{
-            array_push($errors, "Fotoğraf yüklemesi başarısız");
+            array_push($errors, "Failed to upload image");
         }
      }
-     else{
-      array_push($errors, "Fotoğraf gerekiyor");
-     }  
+      
 
      if(count($errors) == 0){
         $id = $_POST['id'];
         unset($_POST['update-post'], $_POST['id']);
         $_POST['published'] = isset($_POST['published']) ? 1 : 0 ;
-        $_POST['body'] = htmlentities($_POST['body']);
 
+        $_POST['body'] = htmlentities($_POST['body']);
         $count=update($table, $id, $_POST);
-        
         $_SESSION['message'] = "Paylaşım başarıyla güncellendi";
-        $_SESSION ['type'] = "success"; 
+        $_SESSION ['type'] = "success";
+        
         
         header("location:" . BASE_URL . "/admin/posts/index.php");
     }
