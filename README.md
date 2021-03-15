@@ -19,8 +19,8 @@ We need to send json codes for creating a post in website. Click on the requests
 
 ```
 {
-"user_id": "2" -- User's id. (You can it in the database)
-"topic_id":"1" -- Game's topic id (You can it in the database)
+"user_id": "2" -- User's id. (You can see it in the database)
+"topic_id":"1" -- Game's topic id (You can see it in the database)
 "title": "Game tilte", -- I wrote this on purpose, you will see on next code.
 "image: <image>,
   "body": "It's the main text in the page"
@@ -35,8 +35,8 @@ This method changes the current valus in the database. It's same as the previous
 
 ```
 {
-"user_id": "3" -- User's id. (You can it in the database)
-"topic_id":"1" -- Game's topic id (You can it in the database)
+"user_id": "3" -- User's id. (You can see it in the database)
+"topic_id":"1" -- Game's topic id (You see can it in the database)
 "title": "Game Title",
 "image: <image>,
   "body": "It's the main text in the page"
@@ -50,7 +50,7 @@ This method changes the current valus in the database. It's same as the previous
 This method gets the posts on the database. If you don't specify the id of the post it will get all the posts.
 ```
 {
-"id": "3" -- Post's id. (You can it in the database)
+"id": "3" -- Post's id. (You can see it in the database)
 }
 ```
 
@@ -58,6 +58,6 @@ This method gets the posts on the database. If you don't specify the id of the p
 This method deletes the post that you specify on code. All you have to do is insert the post's id.
 ```
 {
-"id": "3" -- Post's id. (You can it in the database)
+"id": "3" -- Post's id. (You can see it in the database)
 }
 ```
